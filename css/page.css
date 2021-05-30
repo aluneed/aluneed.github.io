@@ -23,16 +23,26 @@ p
 {
     margin:0; 
     padding:0;
+    box-sizing: border-box;
 }
+
+
+
 
 .header
 {
     background-color: rgb(175, 223, 124);
-    /* position: sticky; */
     position: fixed;
+    /* position: sticky; */
+    /* padding: 0 16px 0 0; */
+    /* color: rgb(255, 245, 233); */
+
+    flex-direction: row;
+    display: flex;
+    /* white-space: nowrap; */
+        
     top: 0;
     width: 100%;
-    /* z-index: 100; */
 
     font-size: 20px;
     letter-spacing: normal;
@@ -40,19 +50,106 @@ p
     /* padding-right: 0px !important; */
     /* margin-right: 0px !important; */
 
-    color: rgb(32,32,32);
-
-    margin: 0 auto;
     min-height: 64px;
     top: 0;
     z-index: 255;
 
     box-shadow: 0 2px 5px 0 rgb(0 0 0 / 30%);
 
-    /* align-items: center;    todo */
+    align-items: center;
+
+    /* padding: 0 16px 0 0; */
 }
 
-.main-body
+.header button
+{
+    top: 0;
+    min-width: 64px;
+    min-height: 64px;
+    padding: 0;
+    height: 100%;
+    display: block;
+    float: left;
+    color: rgb(255, 255, 255);
+}
+
+.lsidenavigator-button
+{
+    top: 0;
+    min-width: 64px;
+    min-height: 64px;
+    padding: 0;
+    height: 100%;
+    display: block;
+    float: left;
+
+
+}
+
+.lsidenavigator
+{
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+
+    z-index: 254;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 30%);
+
+    list-style-type:none
+}
+
+.topNavList
+{
+    background-color: rgb(255, 255, 255);
+    flex-direction: row;
+    /* z-index: 254; */
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 30%);
+    display: flex;
+    /* list-style-type:none; */
+    padding: 0 16px;
+}
+
+.topNavList ul
+{
+    display: flex;
+    font-size: 20px;
+
+}
+
+.topNavList li
+{
+    font-size: 1.6rem;
+    padding-bottom: 2px;
+    list-style-type: none;
+    cursor: pointer;
+    line-height: 2.4rem;
+    display: list-item;
+    /* text-align: -webkit-match-parent; */
+}
+
+.topNavList a
+{
+    margin: 4px;
+    /* cursor: pointer; */
+    font-size: 1.6rem;
+    /* text-transform: uppercase; */
+    line-height: 3.2rem;
+}
+
+#lsideNavigator
+{
+    list-style-type: none;
+    cursor: pointer;
+    display: list-item;
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    float: left;
+    position: fixed;
+    margin-top: 64px;
+    width: 250px;
+}
+
+.main-body, .center-body
 {
     background-color: rgb(255, 255, 255);
 
@@ -72,14 +169,21 @@ p
     color: #000000;
 }
 
-.column {
-    float: left;
-    width: 33.33%;
+
+/* todo - flexible */
+.footer
+{
+    display: block;
+    line-height: 500px;
+    background-color: rgba(204, 204, 204, 0.795);
 }
 
 
 .colors
 {
+
+    color: rgb(255, 245, 233);
+
     color: rgb(175, 223, 124);
     color: rgb(203, 223, 147);
     color: rgb(241, 244, 175);
@@ -97,19 +201,19 @@ p
 /* 未访问链接*/
 a:link
 {
-    color:#000000;
+    color: rgb(105, 97, 84);
 }
 
 /* 已访问链接 */
 a:visited
 {
-    color:#afdf7c;
+    color: rgb(80, 59, 66);
 }
 
 /* 鼠标移动到链接上 */
 a:hover
 {
-    color:#FF00FF;
+    color: rgb(241, 244, 175);
 }
 
 /* 鼠标点击时 */
