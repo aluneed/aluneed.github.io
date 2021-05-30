@@ -1,0 +1,5 @@
+head标签中添加
+<link rel="stylesheet" type="text/css" href="/css/page.css">
+不起作用
+<link rel="stylesheet" type="text/css" href="./css/page.css">
+才成功，路径中需要以.为开头，表示当前相对路径
