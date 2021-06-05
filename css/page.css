@@ -79,10 +79,12 @@ p
     margin-right: 16px;
 }
 
-#logo-home
+#logo-home a
 {
     color: #000000;
-
+    text-align:center;
+    text-decoration: none;
+    font-size: 3rem;
 }
 
 .lsidenavigator-button
@@ -118,6 +120,11 @@ p
     display: flex;
     /* list-style-type:none; */
     padding: 0 16px;
+    position: absolute;
+
+    /* todo: flexible */
+    left: 30%;
+
 }
 
 .topNavList ul
