@@ -18,17 +18,18 @@ p
 }
 
 
-/* 解决header无法置于最上方问题 */
+
 *
 {
-    margin:0; 
-    padding:0;
+    margin:0;   /* 解决header无法置于最上方问题 */
+    padding:0;  /* 解决header无法置于最上方问题 */
     box-sizing: border-box;
+    border-radius: 4px;
 }
 
 
 
-
+/* 为什么用id筛选无效？ */
 .header
 {
     background-color: rgb(175, 223, 124);
@@ -37,21 +38,21 @@ p
     /* padding: 0 16px 0 0; */
     /* color: rgb(255, 245, 233); */
 
-    flex-direction: row;
     display: flex;
+
+    /* flex-direction: row; */
     /* white-space: nowrap; */
-        
+
     top: 0;
     width: 100%;
 
     font-size: 20px;
-    letter-spacing: normal;
+    /* letter-spacing: normal; */
 
     /* padding-right: 0px !important; */
     /* margin-right: 0px !important; */
 
     min-height: 64px;
-    top: 0;
     z-index: 255;
 
     box-shadow: 0 2px 5px 0 rgb(0 0 0 / 30%);
@@ -61,7 +62,7 @@ p
     /* padding: 0 16px 0 0; */
 }
 
-.header button
+#menu-button
 {
     top: 0;
     min-width: 64px;
@@ -71,6 +72,17 @@ p
     display: block;
     float: left;
     color: rgb(255, 255, 255);
+    background-color: transparent;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 30%);
+    box-sizing: border-box;
+    cursor: pointer;
+    margin-right: 16px;
+}
+
+#logo-home
+{
+    color: #000000;
+
 }
 
 .lsidenavigator-button
@@ -86,7 +98,7 @@ p
 
 }
 
-.lsidenavigator
+.lsideNavigator
 {
     position: fixed;
     background-color: rgb(255, 255, 255);
