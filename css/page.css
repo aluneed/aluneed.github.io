@@ -307,11 +307,14 @@ svg:not(:root)
 
     z-index: 9;
     box-shadow: 0 2px 5px 0 rgb(0 0 0 / 30%);
+    
+    /* ! 用于在收起时隐藏子元素 */
+    overflow: hidden;   
 
     list-style-type:none
 }
 
-#lsideNavigator
+#lsNav
 {
     list-style-type: none;
     cursor: pointer;
@@ -322,7 +325,8 @@ svg:not(:root)
     float: left;
     position: fixed;
     margin-top: 64px;
-    width: 250px;
+    /* width: 250px; */
+    width: 0%;
 }
 
 .main-body, .center-body
