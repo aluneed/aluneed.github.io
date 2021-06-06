@@ -311,7 +311,12 @@ svg:not(:root)
     /* ! 用于在收起时隐藏子元素 */
     overflow: hidden;   
 
-    list-style-type:none
+    transition: 0.2s;
+
+    list-style-type:none;
+
+    width: 0%;
+    height: 100%;
 }
 
 #lsNav
@@ -326,7 +331,6 @@ svg:not(:root)
     position: fixed;
     margin-top: 64px;
     /* width: 250px; */
-    width: 0%;
 }
 
 .main-body, .center-body
