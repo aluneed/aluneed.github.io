@@ -1,11 +1,11 @@
-function lsNav() {
-    if(lsnavState == false) {
+function clickMenuButton() {
+    if(menuButtonState == false) {
         document.getElementById("lsNav").style.width = "250px";
-        lsnavState = true
+        menuButtonState = true
     } else {
         document.getElementById("lsNav").style.width = "0";
-        lsnavState = false;
+        menuButtonState = false;
     }
 }
 
-var lsnavState = false;
+var menuButtonState = false;

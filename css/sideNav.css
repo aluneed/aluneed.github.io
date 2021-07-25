@@ -1,0 +1,38 @@
+/** *** LeftSideNavigator *** */
+
+.sideNav
+{
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+
+    z-index: 9;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 30%);
+    
+    /* ! 用于在收起时隐藏子元素 */
+    overflow: hidden;   
+
+    transition: 0.2s;
+
+    list-style-type:none;
+
+    width: 0%;
+    height: 100%;
+}
+
+/* .lsnContainer
+{
+    overflow: auto;
+} */
+
+.sideNav
+{
+    list-style-type: none;
+    cursor: pointer;
+    display: list-item;
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    float: left;
+    position: fixed;
+    margin-top: 64px;
+}

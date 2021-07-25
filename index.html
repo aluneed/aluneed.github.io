@@ -1,38 +1,47 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>aluneed</title>
-<link rel="stylesheet" type="text/css" href="./css/page.css">
-<script src="./js/ui-controller.js"></script>
-
+    <meta charset="utf-8">
+    <title>aluneed</title>
+    <link rel="stylesheet" type="text/css" href="./css/page.css">
+    <link rel="stylesheet" type="text/css" href="./css/header.css">
+    <link rel="stylesheet" type="text/css" href="./css/sideNav.css">
+    <link rel="stylesheet" type="text/css" href="./css/content.css">
+    <link rel="stylesheet" type="text/css" href="./css/footer.css">
+    <script src="./js/ui-controller.js"></script>
 </head>
 <body>
 
     <div class="header">
         <!-- <h1>header test</h1> -->
-        <button onclick="lsNav()" title="menu" id="menu-button">
+        <button onclick="clickMenuButton()" title="menu" id="menuButton">
             menu
         </button>
 
-        <div id="logo-home">
+        <div id="logoHome">
             <a href="./index.html">aluneed</a>
         </div>
 
-        <div class="topNav">
-            <div class="topNavList" id="topNavList">
+        <div class="nav">
+            <div class="navList" id="navList">
                 <ul>    <!-- unordered lists -->
                     <li><a href="#1">
-                        <span class="navListElem">navtest1</span>
+                        <span class="navListItem">articles</span>
                     </a></li>    <!-- list item -->
                     <li><a href="#2">
-                        <span class="navListElem">navtest2</span>
+                        <span class="navListItem">essays</span>
                     </a></li>
                     <li><a href="#3">
-                        <span class="navListElem">navtest3</span>
+                        <span class="navListItem">notes</span>
                     </a></li>
                     <li><a href="#4">
-                        <span class="navListElem">navtest4</span>
+                        <span class="navListItem">thoughts</span>
+                    </a></li>
+                    <li><a href="#5">
+                        <span class="navListItem">diary</span>
+                    </a></li>
+                    <li><a href="#5">
+                        <span class="navListItem">pitntip</span>
                     </a></li>
                     <!-- todo: js generate -->
                 </ul>
@@ -58,11 +67,25 @@
 
     </div>
 
-    <div id="lsNav" class="lsideNavigator">
-        <a href="#">lsntest1</a>
-        <a href="#">lsntest2</a>
-        <a href="#">lsntest3</a>
-        <a href="#">lsntest4</a>
+    <div id="lsNav" class="sideNav">
+        <li><a href="#1">    <!-- list item -->
+            <span class="navListItem">articles</span>
+        </a></li>
+        <li><a href="#2">
+            <span class="navListItem">essays</span>
+        </a></li>
+        <li><a href="#3">
+            <span class="navListItem">notes</span>
+        </a></li>
+        <li><a href="#4">
+            <span class="navListItem">thoughts</span>
+        </a></li>
+        <li><a href="#5">
+            <span class="navListItem">diary</span>
+        </a></li>
+        <li><a href="#5">
+            <span class="navListItem">pitntip</span>
+        </a></li>
     </div>
 
     <div id="essayMap">
@@ -107,7 +130,7 @@
         <ul class="list-essay">
             <li class="list-essay-item">
                 <div class="essay-container">
-                    <a href="./">test1</a>
+                    <a href="./index.html">test1</a>
                 </div>
             </li>
 

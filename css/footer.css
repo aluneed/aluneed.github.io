@@ -1,0 +1,9 @@
+/** *** Footer *** */
+
+/* todo - flexible */
+.footer
+{
+    display: block;
+    line-height: 500px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
