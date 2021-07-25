@@ -3,12 +3,9 @@
 {
     background-color: rgb(175, 223, 124);
     position: fixed;
-    /* position: sticky; */
-    /* padding: 0 16px 0 0; */
-    /* color: rgb(255, 245, 233); */
 
     display: flex;
-    box-sizing: border-box;
+    flex-direction: row;
 
     margin: 0 auto;
     padding: 0 16px 0 0;
@@ -44,13 +41,14 @@
 
 #menuButton
 {
-    top: 0;
+    /* top: 0; */
     min-width: 64px;
     min-height: 64px;
-    padding: 0;
-    height: 100%;
+    /* padding: 0; */
+    /* height: 100%; */
     display: block;
-    float: left;
+    /* float: left; */
+    /* justify-content: flex-start; */
     color: rgb(255, 255, 255);
     background-color: transparent;
     box-shadow: 0 2px 5px 0 rgb(0 0 0 / 30%);
@@ -66,12 +64,9 @@
     text-align:center;
     text-decoration: none;
     font-size: 3rem;
-    margin-right: 16px;
+    margin: 0 16px;
     box-sizing: border-box;
 }
-
-
-
 
 .nav
 {
@@ -79,6 +74,8 @@
     padding: 0 16px;
     padding: 16px;
     display: flex;
+    justify-content: center;
+    /* margin: 0 auto; */
     
 }
 
@@ -96,17 +93,23 @@
     flex-direction: row;
 
     /* list-style-type:none; */
-    padding: 0 16px;
+    /* padding: 0; */
+    
+    /* left: 30%; */
+    /* text-align: center; */
+    /* margin: auto; */
+    
     position: absolute;
-
-    /* todo: flexible */
-    left: 30%;
+    left: 50%;
+    transform: translate(-50%);
+    /* top: 50%; */
+    /* transform: translate(-50%,-50%); */
 
     font-size: 1.6rem;
     height: 3.2rem;
     align-items: center;
-
-    padding: 16px;
+    /* justify-self: center; */
+    /* justify-items: baseline; */
     flex-shrink: 0;
 
     border-radius: 4px;
@@ -116,21 +119,20 @@
 {
     display: flex;
     list-style-position: inside;
+    list-style-type: disc;
     font-size: 1.6rem;
     line-height: 3.2rem;
 
-    list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
     /* padding-inline-start: 40px; */
-    margin-inline-start: 0;
-    margin-inline-end: 0;
+    /* margin-block-start: 1em; */
+    /* margin-block-end: 1em; */
+    /* margin-inline-start: 0; */
+    /* margin-inline-end: 0; */
 }
 
 .navList li
 {
     font-size: 1.6rem;
-    padding-bottom: 2px;
     list-style-type: none;
     cursor: pointer;
     line-height: 2.4rem;
@@ -138,7 +140,7 @@
     /* text-align: -webkit-match-parent; */
 
     padding-bottom: 2px;
-    padding: 0 16px;
+    /* padding: 0 16px; */
 
 }
 
@@ -157,7 +159,7 @@
 .navListItem
 {
     border-radius: 4px;
-    padding: 8px 16px;
+    padding: 8px 12px;
 }
 
 .external

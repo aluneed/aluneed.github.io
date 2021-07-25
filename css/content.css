@@ -19,14 +19,14 @@
 }
 
 
-.essay
+.artile
 {
     padding: 40px;
     margin: 40px;
     color: #000000;
 }
 
-.list-essay
+.artileList
 {
     display: block;
     font-size: 1.6rem;
@@ -35,7 +35,7 @@
     list-style-type: none;
 }
 
-.list-essay li
+.artileList li
 {
     display: block;
     /* box-shadow: 0 2px 5px 0 rgb(87 111 62 / 30%); */
@@ -47,7 +47,7 @@
     border-radius: 4px;
 }
 
-.list-essay a
+.articleList a
 {
     text-decoration: none;
 }
