@@ -1,5 +1,13 @@
 /** *** Global *** */
 
+*
+{
+    margin:0;   /* 解决header无法置于最上方问题 */
+    padding:0;  /* 解决header无法置于最上方问题 */
+    box-sizing: border-box;
+    /* border-radius: 4px; */
+}
+
 body
 {
     /* background-color: rgb(155, 200, 207); */
@@ -25,13 +33,7 @@ html
     font-size: 62.5%;
 }
 
-*
-{
-    margin:0;   /* 解决header无法置于最上方问题 */
-    padding:0;  /* 解决header无法置于最上方问题 */
-    box-sizing: border-box;
-    /* border-radius: 4px; */
-}
+
 
 /* 未访问链接*/
 a:link
