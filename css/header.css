@@ -1,3 +1,4 @@
+/** *** Header *** */
 
 .header
 {
@@ -86,7 +87,10 @@
 
 .navList
 {
-    background-color: rgb(255, 255, 255);
+    /* background-color: rgb(255, 255, 255); */
+
+
+
     /* z-index: 254; */
     /* box-shadow: 0 2px 5px 0 rgb(0 0 0 / 30%); */
     display: flex;
@@ -106,6 +110,8 @@
     /* transform: translate(-50%,-50%); */
 
     font-size: 1.6rem;
+    font-family: 'Cascadia Code Extralight';
+
     height: 3.2rem;
     align-items: center;
     /* justify-self: center; */
@@ -159,7 +165,7 @@
 .navListItem
 {
     border-radius: 4px;
-    padding: 8px 12px;
+    padding: 8px clamp(4px,.84vw,16px);
 }
 
 .external

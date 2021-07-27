@@ -38,7 +38,8 @@ html
 /* 未访问链接*/
 a:link
 {
-    color: rgb(105, 97, 84);
+    /* color: rgb(105, 97, 84); */
+    color: black;
 }
 
 /* 已访问链接 */
@@ -100,4 +101,9 @@ svg:not(:root)
     color: rgb(51, 48, 41);
     color: rgb(105, 97, 84);
 
+}
+
+@font-face {
+    font-family: 'Cascadia Code Extralight';
+    src: url('../fonts/CascadiaCode-ExtraLight.otf');
 }
