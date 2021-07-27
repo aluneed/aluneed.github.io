@@ -105,5 +105,5 @@ svg:not(:root)
 
 @font-face {
     font-family: 'Cascadia Code Extralight';
-    src: url('../fonts/CascadiaCode-ExtraLight.otf');
+    src: url('./fonts/CascadiaCode-ExtraLight.otf');
 }
