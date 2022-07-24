@@ -35,8 +35,8 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
-      - run: npm install
-      - run: ng build
+      - run: npm ci
+      - run: npm run build --if-present
       - run: cp ./dist/static-blog ./docs
   deploy:
     runs-on: ubuntu-latest
