@@ -41,6 +41,5 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: push to github pages repo
       - run: git commit
       - run: git push
