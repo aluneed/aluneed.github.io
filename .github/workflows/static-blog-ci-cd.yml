@@ -39,7 +39,9 @@ jobs:
       - name: setup Deno
         # uses: denoland/setup-deno@v1
         uses: denoland/setup-deno@004814556e37c54a2f6e31384c9e18e983317366
-          deno-version: v1.x
+          with:
+            deno-version: v1.x
+            cache: 'deno'
       - name: copy files with deno
         run: deno run -A ./copy-files.ts
       - name: GitHub Push
