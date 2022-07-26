@@ -10,3 +10,5 @@ type: blog
 # blogTest
 
 ![alt](images/test-picture.jpg "title")
+
+test github actions
