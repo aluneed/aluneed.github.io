@@ -4,6 +4,6 @@ export interface Tag {
 }
 
 export const tags: Tag[] = [
-  {"name":"blog","count":1},
-  {"name":"test","count":1},
+  {"name":"blog","count":2},
+  {"name":"test","count":2},
 ]
