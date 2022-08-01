@@ -32,7 +32,7 @@ type: blog
 这没什么问题, 花不了十个小时就能解决问题  
 问题来自于运行环境  
 
-我最初的选择是azure的应用服务, 配置够用, 完全免费, 看上去很美好  
+最初的选择是azure的应用服务, 配置够用, 完全免费, 看上去很美好  
 ![md-img](images/finally-this-shit-starts-running/azure-web-application.png "azure-web-application")
 然而它带来的是更多的限制, docker相关设施只能用azure的服务, 数据库只能用azure的服务, 除了应用服务中的代码, 全得用azure的付费服务  
 此外, 免费的azure服务是有CPU时间配额的, 而且在一段时间中没有访问时, 还会自动释放资源  
@@ -230,7 +230,7 @@ java干这事有些臃肿, 有些大材小用, go则让人毫无欲望
 在使用typescript的过程中, 我发现它并不是一个幻想中的完美语言, 但并不至于让人厌恶  
 nest.js和deno的取舍算是值得思考, 但我想要的是尝试一种全新的runtime, 而非构建于node上的框架  
 最关键的在于, deno无论是网站还是logo都比nest.js更吸引人  
-![md-img](images/finally-this-shit-starts-running/docs-nestjs-com.png "docs-nestjs-com")  
+![md-img](images/finally-this-shit-starts-running/docs-nestjs-com.png "docs-nestjs-com")
 不知道是谁想出来的把一个汉堡放在一个猫头边上当做侧边栏的切换按钮的  
 
 deno从安装到文档都不错  
