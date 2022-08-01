@@ -124,6 +124,17 @@ extralight的字体极富设计感
 更重要的是, 虽然它被称为一种`fun`的字体, 但在稳重的配色下会呈现出非常复古的风格, 却又不会显得古板  
 在最早的尝试中, 我甚至采用ligature的字符组合来表示一些图标  
 
+在上传这篇文章之后, 我才发现之前完全没有对汉字做字体测试  
+font-family中完全没有汉字的备选项  
+苹方和雅黑都是不错的字体, 但是看上去和cascadia并不搭调, 默认的字重也缺乏设计感  
+没有太多的选择, 我首先尝试了source han sans, 它的light字重和cascadia extralight看上去几乎一致  
+如果可以的话, 我希望能让平假名和片假名显示为衬线字体, 汉字则显示为无衬线字体  
+然而无论是source han还是noto的最简字符集, 日文和简体中文都免不了有大量的重复  
+或许只有单独定制一个假名字符集才能解决问题, 但这却无法解决假名和汉字夹杂时的问题  
+再碍于source han一个字重就超过4mb的体积, 我最终选择了noto sans sc和noto sans jp, 并直接通过google fonts的api在线获取  
+
+markdown被组件解析后的html文档字体仍然是一个问题, 因为css中定义的样式会在渲染时被覆盖, 只能通过marked组件的配置来解决  
+
 在配色方面, 除了黑色, 包括链接的hover在内, 我只采用了`gmk botanical`这套键帽的配色  
 ![md-img](images/finally-this-shit-starts-running/gmk-botanical.jpeg "gmk-botanical")  
 众所周知, 四种颜色足以在任何情况下区分平面上的任何区域, 只是如何搭配需要花点心思  
