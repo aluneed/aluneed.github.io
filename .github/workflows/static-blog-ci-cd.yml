@@ -23,7 +23,7 @@ jobs:
           deno-version: v1.x
           cache: 'deno'
       - name: generate index with Deno
-        run: deno run -A ./index-generator.ts ./docs ./assets
+        run: deno run -A ./index-json-generator.ts ./docs ./assets
       - name: Git Auto Commit
         # You may pin to the exact commit or the version.
         # uses: stefanzweifel/git-auto-commit-action@49620cd3ed21ee620a48530e81dba0d139c9cb80
