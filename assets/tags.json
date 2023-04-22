@@ -4,5 +4,11 @@
   {"name":"deno","count":1},
   {"name":"typescript","count":1},
   {"name":"blog","count":1},
-  {"name":"web","count":1}
+  {"name":"web","count":1},
+  {"name":"haskell","count":1},
+  {"name":"env","count":1},
+  {"name":"trivial","count":1},
+  {"name":"ghc","count":1},
+  {"name":"ghcup","count":1},
+  {"name":"stack","count":1}
 ]
