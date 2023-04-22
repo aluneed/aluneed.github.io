@@ -42,3 +42,6 @@ notes.md
 # System files
 .DS_Store
 Thumbs.db
+
+# misc
+/drafts/
