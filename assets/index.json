@@ -1,4 +1,5 @@
 [
   {"id":1,"title":"终于, 这玩意儿跑起来了","date":"2022-08-01","tags":["frontend","angular","deno","typescript","blog","web"],"category":"blog","type":"blog","path":"finally-this-shit-starts-running.md"},
-  {"id":2,"title":"haskell环境","date":"2023-04-22","tags":["haskell","env","trivial","ghc","ghcup","stack"],"category":"blog","type":"blog","path":"haskell-env.md"}
+  {"id":2,"title":"haskell环境","date":"2023-04-22","tags":["haskell","env","trivial","ghc","ghcup","stack"],"category":"blog","type":"blog","path":"haskell-env.md"},
+  {"id":3,"title":"microsoft todo的致命问题","date":"2023-04-25","tags":["app","microsoft"],"category":"blog","type":"blog","path":"ms-todo-is-shit.md"}
 ]

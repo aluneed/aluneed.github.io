@@ -10,5 +10,7 @@
   {"name":"trivial","count":1},
   {"name":"ghc","count":1},
   {"name":"ghcup","count":1},
-  {"name":"stack","count":1}
+  {"name":"stack","count":1},
+  {"name":"app","count":1},
+  {"name":"microsoft","count":1}
 ]
