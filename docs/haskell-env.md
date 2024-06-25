@@ -56,6 +56,8 @@ https://www.haskell.org/ghcup/install/#manual-installation
 cabal明明在ghcup里就可以正常安装  
 
 把这个单一可执行文件挪到~/.ghcup/bin中, 加上推荐的path设置就可以了  
+(如果没有之前的安装过程, 那么下载下来的可执行文件最好重命名为`ghcup`, 然后手动创建`~/.ghcup/bin`路径)  
+(如果下载的可执行文件缺少权限, 可能还需要`chmod +x ./ghcup`, 要不就得一直sudo运行; 第一次执行后会被macos拦截, 需要到设置-隐私与安全性中去允许运行)  
 
 ![md-img](images/haskell-env/ghcup-tui.png)
 ghcup tui打开之后, i安装s设置, 安装了的会有一个钩, 设置好了会有两个钩  
